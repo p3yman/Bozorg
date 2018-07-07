@@ -1,0 +1,25 @@
+{
+  "name": "bozorg",
+  "version": "0.1.0",
+  "description": "Bozorg CSS Framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peyman3d/bozorg.git"
+  },
+  "keywords": [
+    "css",
+    "framework",
+    "ui",
+    "front-end"
+  ],
+  "author": "Peyman Eskandari (@peyman3d)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/peyman3d/bozorg/issues"
+  },
+  "homepage": "https://github.com/peyman3d/bozorg#readme"
+}
