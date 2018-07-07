@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6,
 	line-height: $heading-line-height;
 	margin: 0 0 $heading-margin-bottom;
 
-	small{
+	small, .small{
 		font-size: $heading-small-font-size;
 		font-weight: $heading-small-font-weight;
 		color: $heading-small-color;
@@ -67,4 +67,5 @@ code{
 	padding: $code-padding-y $code-padding-x;
 	border-radius: $border-radius;
 	direction: ltr !important;
+	vertical-align: middle;
 }
