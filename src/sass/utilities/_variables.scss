@@ -141,6 +141,23 @@ $right:       			if($direction == rtl, right, left);
 $transition:			all 0.2s ease-in-out;
 
 
+// Grid
+//------------------------------------------------
+$bp-sizes: (
+   'xs': 480,
+   'sm': 768,
+   'md': 992,
+   'lg': 1200,
+);
+$container-sizes: (
+  'sm': 750,
+  'md': 970,
+  'lg': 1170,
+);
+$columns: 12;
+$gutter: 30px;
+
+
 // Typography
 // ------------------------------------------------
 
