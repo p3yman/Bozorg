@@ -2,7 +2,6 @@
 // Variables
 //-----------------------------------------------------------------
 
-
 // Colors
 //------------------------------------------------
 $color-red:                 #E74C3C      !default;
@@ -94,3 +93,14 @@ $socials: (
 
 // Global color
 $global-color:              $color-blue;
+
+
+// Border
+//------------------------------------------------
+$global-border-color:       #e7e7e7;
+$global-border:             1px solid $global-border-color;
+$global-border-light-color: #e3ebed;
+$global-border-light: 		1px solid $global-border-light-color;
+$global-border-radius:      3px;
+
+
