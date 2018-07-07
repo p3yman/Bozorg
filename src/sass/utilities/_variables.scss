@@ -98,9 +98,9 @@ $global-color:              $color-blue;
 // Border
 //------------------------------------------------
 $border-color:       #e7e7e7;
-$border:             1px solid $global-border-color;
+$border:             1px solid $border-color;
 $border-light-color: #e3ebed;
-$border-light: 		 1px solid $global-border-light-color;
+$border-light: 		 1px solid $border-light-color;
 $border-radius:      3px;
 
 
@@ -131,12 +131,35 @@ $z-index-front:				9999;
 // Direction
 //------------------------------------------------
 $direction:          	rtl !default;
-$direction-reverse:  	if($global-direction == rtl, ltr, rtl) !default;
-$left:        		 	if($global-direction == rtl, left, right);
-$right:       			if($global-direction == rtl, right, left);
+$direction-reverse:  	if($direction == rtl, ltr, rtl);
+$left:        		 	if($direction == rtl, left, right);
+$right:       			if($direction == rtl, right, left);
 
 
 // Transitions
 // ------------------------------------------------
 $transition:			all 0.2s ease-in-out;
 
+
+// Typography
+// ------------------------------------------------
+
+// Font directory
+$font-directory: '../fonts/';
+
+// Font Family
+$font-family:         		"Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+
+// Font weights
+$font-weight-ultralight:    100 !default;
+$font-weight-light:    		300 !default;
+$font-weight-normal:        normal !default;
+$font-weight-medium:        500 !default;
+$font-weight-bold:          bold !default;
+
+// Font base
+$base-font-family:        	$font-family !default;
+$base-font-size:          	14px !default;
+$base-font-weight:        	$font-weight-normal !default;
+$base-line-height:        	1.5 !default;
+$base-font-color:        	#000 !default;

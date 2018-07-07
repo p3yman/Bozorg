@@ -17,13 +17,13 @@ html {
 }
 body {
 	margin: 0;
-	//font-family: $global-font-family;
-	//font-size: $global-font-size;
-	//font-weight: $global-font-weight;
-	//line-height: $global-line-height;
-	//color: $global-base-color;
+	font-family: $base-font-family;
+	font-size: $base-font-size;
+	font-weight: $base-font-weight;
+	line-height: $base-line-height;
+	color: $base-font-color;
 	background-color: #fff;
-	//direction: $global-direction;
+	direction: $direction;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
