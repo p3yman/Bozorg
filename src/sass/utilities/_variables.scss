@@ -139,6 +139,7 @@ $right:       			if($direction == rtl, right, left);
 // Transitions
 // ------------------------------------------------
 $transition:			all 0.2s ease-in-out;
+$text-transition:		$transition;
 
 
 // Grid

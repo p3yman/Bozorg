@@ -1,0 +1,115 @@
+/*-----------------------------------------------------------------
+- Typography
+-----------------------------------------------------------------*/
+
+// Variables
+//------------------------------------------------
+
+// Anchor
+$link-color:                $global-color !default;
+$link-decoration:           underline !default;
+$link-hover-color:          darken($global-color, 20%) !default;
+$link-hover-decoration:     underline !default;
+$link-transition:     		$text-transition !default;
+
+// Heading
+$heading-font-size:         32, 28, 20, 16, 14, 13 !default;
+$heading-font-weight:       $font-weight-bold !default;
+$heading-color:             #222 !default;
+$heading-line-height:       $base-line-height !default;
+$heading-margin-bottom:     10px !default;
+$heading-small-font-size:   80% !default;
+$heading-small-font-weight: $font-weight-normal !default;
+$heading-small-color:       #555 !default;
+$heading-small-line-height: $base-line-height !default;
+
+// Paragraph
+$p-font-family:           	inherit !default;
+$p-font-weight:				$font-weight-light !default;
+$p-color:					#222 !default;
+$p-margin-bottom:           1rem !default;
+
+// Mark
+$mark-bg:                   #fffecc !default;
+$mark-padding-y:            1px !default;
+$mark-padding-x:            3px !default;
+
+// Strong
+$strong-font-weight:        $font-weight-bold !default;
+
+// Code
+$code-font-family:          "Courier New", monospace !default;
+$code-font-size:            100% !default;
+$code-bg:                   #333 !default;
+$code-color:                #fff !default;
+$code-padding-y:            3px !default;
+$code-padding-x:            5px !default;
+
+// Styles
+//------------------------------------------------
+// Anchor
+a{
+	color: $link-color;
+	text-decoration: $link-decoration;
+	transition: $link-transition;
+	background-color: transparent;
+	-webkit-text-decoration-skip: objects;
+
+	&:hover {
+		color: $link-hover-color;
+		text-decoration: $link-hover-decoration;
+	}
+}
+
+// Heading
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6{
+	font-family: inherit;
+	font-weight: $heading-font-weight;
+	color: $heading-color;
+	line-height: $heading-line-height;
+	margin: 0 0 $heading-margin-bottom;
+
+	small{
+		font-size: $heading-small-font-size;
+		font-weight: $heading-small-font-weight;
+		color: $heading-small-color;
+		line-height: $heading-small-line-height;
+	}
+
+}
+@for $i from 1 through 6 {
+	h#{$i}, .h#{$i} {
+		font-size: rem(nth($heading-font-size, $i));
+	}
+}
+
+// Paragraph
+p{
+	font-family: $p-font-family;
+	font-weight: $p-font-weight;
+	color: $p-color;
+	margin: 0 0 $p-margin-bottom 0;
+}
+
+// Mark
+mark{
+	background: $mark-bg;
+	padding: $mark-padding-y $mark-padding-x;
+}
+
+// Strong
+b, strong{
+	font-weight: $strong-font-weight;
+}
+
+// Code
+code{
+	font-family: $code-font-family;
+	font-size: $code-font-size;
+	background: $code-bg;
+	color: $code-color;
+	padding: $code-padding-y $code-padding-x;
+	border-radius: $border-radius;
+	direction: ltr !important;
+}
