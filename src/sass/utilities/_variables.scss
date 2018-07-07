@@ -1,3 +1,96 @@
 //-----------------------------------------------------------------
 // Variables
 //-----------------------------------------------------------------
+
+
+// Colors
+//------------------------------------------------
+$color-red:                 #E74C3C      !default;
+$color-red-lightest:		lighten($color-red, 36%) !default;
+$color-red-lighter:			lighten($color-red, 20%) !default;
+$color-red-light:			lighten($color-red, 10%) !default;
+$color-red-dark:			darken($color-red, 10%) !default;
+$color-red-darker:			darken($color-red, 20%) !default;
+$color-orange:              #FF9800      !default;
+$color-orange-lightest:		lighten($color-orange, 40%) !default;
+$color-orange-lighter:		lighten($color-orange, 20%) !default;
+$color-orange-light:		lighten($color-orange, 10%) !default;
+$color-orange-dark:			darken($color-orange, 10%) !default;
+$color-orange-darker:		darken($color-orange, 20%) !default;
+$color-yellow:              #FFC107      !default;
+$color-yellow-lightest:		lighten($color-yellow, 40%) !default;
+$color-yellow-lighter:		lighten($color-yellow, 20%) !default;
+$color-yellow-light:		lighten($color-yellow, 10%) !default;
+$color-yellow-dark:			darken($color-yellow, 10%) !default;
+$color-yellow-darker:		darken($color-yellow, 20%) !default;
+$color-green:               #4caf50      !default;
+$color-green-lightest:		lighten($color-green, 40%) !default;
+$color-green-lighter:		lighten($color-green, 20%) !default;
+$color-green-light:			lighten($color-green, 10%) !default;
+$color-green-dark:			darken($color-green, 10%) !default;
+$color-green-darker:		darken($color-green, 20%) !default;
+$color-teal:                #009688      !default;
+$color-teal-lightest:		lighten($color-teal, 60%) !default;
+$color-teal-lighter:		lighten($color-teal, 20%) !default;
+$color-teal-light:			lighten($color-teal, 10%) !default;
+$color-teal-dark:			darken($color-teal, 10%) !default;
+$color-teal-darker:			darken($color-teal, 20%) !default;
+$color-blue:                #2196F3      !default;
+$color-blue-lightest:		lighten($color-blue, 40%) !default;
+$color-blue-lighter:		lighten($color-blue, 20%) !default;
+$color-blue-light:			lighten($color-blue, 10%) !default;
+$color-blue-dark:			darken($color-blue, 10%) !default;
+$color-blue-darker:			darken($color-blue, 20%) !default;
+$color-purple:              #8362D6      !default;
+$color-purple-lightest:		lighten($color-purple, 33%) !default;
+$color-purple-lighter:		lighten($color-purple, 20%) !default;
+$color-purple-light:		lighten($color-purple, 10%) !default;
+$color-purple-dark:			darken($color-purple, 10%) !default;
+$color-purple-darker:		darken($color-purple, 20%) !default;
+$color-gray:                #484D61 !default;
+$color-gray-lightest:		lighten($color-gray, 50%) !default;
+$color-gray-lighter:		lighten($color-gray, 20%) !default;
+$color-gray-light:			lighten($color-gray, 10%) !default;
+$color-gray-dark:			darken($color-gray, 10%) !default;
+$color-gray-darker:			darken($color-gray, 20%) !default;
+$colors-all: (
+		'red': $color-red, 'red-lightest': $color-red-lightest, 'red-lighter': $color-red-lighter, 'red-light': $color-red-light, 'red-dark': $color-red-dark, 'red-darker': $color-red-darker,
+		'orange': $color-orange, 'orange-lightest': $color-orange-lightest, 'orange-lighter': $color-orange-lighter, 'orange-light': $color-orange-light, 'orange-dark': $color-orange-dark, 'orange-darker': $color-orange-darker,
+		'yellow': $color-yellow, 'yellow-lightest': $color-yellow-lightest, 'yellow-lighter': $color-yellow-lighter, 'yellow-light': $color-yellow-light, 'yellow-dark': $color-yellow-dark, 'yellow-darker': $color-yellow-darker,
+		'green': $color-green, 'green-lightest': $color-green-lightest, 'green-lighter': $color-green-lighter, 'green-light': $color-green-light, 'green-dark': $color-green-dark, 'green-darker': $color-green-darker,
+		'teal': $color-teal, 'teal-lightest': $color-teal-lightest, 'teal-lighter': $color-teal-lighter, 'teal-light': $color-teal-light, 'teal-dark': $color-teal-dark, 'teal-darker': $color-teal-darker,
+		'blue': $color-blue, 'blue-lightest': $color-blue-lightest, 'blue-lighter': $color-blue-lighter, 'blue-light': $color-blue-light, 'blue-dark': $color-blue-dark, 'blue-darker': $color-blue-darker,
+		'purple': $color-purple, 'purple-lightest': $color-purple-lightest, 'purple-lighter': $color-purple-lighter, 'purple-light': $color-purple-light, 'purple-dark': $color-purple-dark, 'purple-darker': $color-purple-darker,
+		'gray': $color-gray, 'gray-lightest': $color-gray-lightest, 'gray-lighter': $color-gray-lighter, 'gray-light': $color-gray-light, 'gray-dark': $color-gray-dark, 'gray-darker': $color-gray-darker,
+) !default;
+$colors: (
+		'red':              $color-red,
+		'orange':           $color-orange,
+		'yellow':           $color-yellow,
+		'green':            $color-green,
+		'teal':             $color-teal,
+		'blue':             $color-blue,
+		'purple':           $color-purple,
+		'gray-darker':      $color-gray-darker,
+		'gray-dark':        $color-gray-dark,
+		'gray':             $color-gray,
+		'gray-light':       $color-gray-light,
+		'gray-lighter':     $color-gray-lighter,
+) !default;
+
+// Socials
+$socials: (
+		'facebook':         #3b5998,
+		'google':      		#4285f4,
+		'google-plus':      #dd4b39,
+		'twitter':          #00aced,
+		'instagram':        #405de6,
+		'linkedin':         #007bb6,
+		'youtube':          #bb0000,
+		'telegram':         #0088cc,
+		'dribbble':         #ea4c89,
+		'pinterest':       	#bd081c,
+) !default;
+
+// Global color
+$global-color:              $color-blue;
