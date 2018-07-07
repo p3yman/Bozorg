@@ -127,3 +127,11 @@ $z-index-8:					800;
 $z-index-9:					900;
 $z-index-front:				9999;
 
+
+// Direction
+//------------------------------------------------
+$direction:          	rtl !default;
+$direction-reverse:  	if($global-direction == rtl, ltr, rtl) !default;
+$left:        		 	if($global-direction == rtl, left, right);
+$right:       			if($global-direction == rtl, right, left);
+
