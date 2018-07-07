@@ -130,7 +130,7 @@ $z-index-front:				9999;
 
 // Direction
 //------------------------------------------------
-$direction:          	rtl !default;
+$direction:          	ltr !default;
 $direction-reverse:  	if($direction == rtl, ltr, rtl);
 $left:        		 	if($direction == rtl, left, right);
 $right:       			if($direction == rtl, right, left);

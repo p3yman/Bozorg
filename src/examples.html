@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bozorg Examples</title>
+
+    <link rel="stylesheet" href="css/bozorg.css">
+
+    <style>
+        body{
+            padding: 50px;
+        }
+        .sample-box{
+            width: 15%;
+            height: 60px;
+            display: inline-block;
+            margin: 5px;
+        }
+    </style>
+
+</head>
+<body>
+
+    @@for (var i = 0; i < colors.length; i++) {
+        <div class="sample-box bg-`+colors[i]+`-lightest"></div>
+        <div class="sample-box bg-`+colors[i]+`-lighter"></div>
+        <div class="sample-box bg-`+colors[i]+`-light"></div>
+        <div class="sample-box bg-`+colors[i]+`"></div>
+        <div class="sample-box bg-`+colors[i]+`-dark"></div>
+        <div class="sample-box bg-`+colors[i]+`-darker"></div>
+        <br>
+    }
+
+</body>
+</html>

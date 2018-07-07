@@ -93,7 +93,10 @@ gulp.task('html', function() {
     gulp.src( [html.in, '!' + html.partials, '!' + html.elements ])
         .pipe(fileinclude({
             prefix: '@@',
-            basepath: '@file'
+            basepath: '@file',
+            context: {
+                colors: ['red', 'orange', 'yellow', 'green', 'teal', 'blue', 'purple', 'gray']
+            }
         }))
         .pipe(prettify({indent_size: 4}))
         .pipe(gulp.dest(html.out));
