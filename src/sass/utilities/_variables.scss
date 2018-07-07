@@ -97,10 +97,16 @@ $global-color:              $color-blue;
 
 // Border
 //------------------------------------------------
-$global-border-color:       #e7e7e7;
-$global-border:             1px solid $global-border-color;
-$global-border-light-color: #e3ebed;
-$global-border-light: 		1px solid $global-border-light-color;
-$global-border-radius:      3px;
+$border-color:       #e7e7e7;
+$border:             1px solid $global-border-color;
+$border-light-color: #e3ebed;
+$border-light: 		 1px solid $global-border-light-color;
+$border-radius:      3px;
 
 
+// Shadow
+//------------------------------------------------
+$box-shadow-xs:      0 1px 4px rgba(#000, 0.1);
+$box-shadow-sm:      0 2px 4px rgba(#000, 0.2);
+$box-shadow:         0 3px 15px rgba(#000, 0.2);
+$box-shadow-lg:      0 5px 25px rgba(#000, 0.3);
