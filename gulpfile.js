@@ -57,10 +57,10 @@ var src_dir         = 'src/',
 // Styles
 gulp.task('styles', function() {
     return gulp.src(css.in)
-        .pipe( sourcemaps.init() )
+        // .pipe( sourcemaps.init() )
         .pipe( sass().on('error', sass.logError) )
         .pipe( autoprefixer("last 5 version") )
-        .pipe( sourcemaps.write() )
+        // .pipe( sourcemaps.write() )
         .pipe( gulp.dest( css.out ) );
 });
 gulp.task('stylesBuild', function() {

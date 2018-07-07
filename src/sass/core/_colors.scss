@@ -1,0 +1,21 @@
+/*-----------------------------------------------------------------
+- Colors
+-----------------------------------------------------------------*/
+@each $color, $value in $colors-all{
+	&.color-#{$color}{
+		color: $value !important;
+	}
+	&.bg-#{$color}{
+		background-color: $value !important;
+	}
+	&.brdc-#{$color}{
+		border-color: $value !important;
+	}
+	&.link-#{$color}{
+		color: $value !important;
+
+		&:hover{
+			color: lighten($value, 10%) !important;
+		}
+	}
+}
