@@ -1,3 +1,46 @@
 //-----------------------------------------------------------------
 // Functions
 //-----------------------------------------------------------------
+
+// Convert px to rem
+//------------------------------------------------
+@function rem($size) {
+
+	@if ($size == 0) {
+		@return 0;
+	}
+
+	$remSize: $size / 16;
+	@return #{$remSize}rem;
+}
+
+// Convert value to px
+//------------------------------------------------
+@function px($size){
+	@if ($size == 0) {
+		@return 0;
+	}
+
+	@return #{$size}px;
+}
+
+// Map deep get
+//------------------------------------------------
+@function map-deep-get($map, $keys...) {
+	@each $key in $keys {
+		$map: map-get($map, $key);
+	}
+	@return $map;
+}
+
+// Tint: Mix color with white
+//------------------------------------------------
+@function tint($color, $percentage) {
+	@return mix(white, $color, $percentage);
+}
+
+// Shade: Mix color with black
+//------------------------------------------------
+@function shade($color, $percentage) {
+	@return mix(black, $color, $percentage);
+}
