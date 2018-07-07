@@ -135,3 +135,8 @@ $direction-reverse:  	if($global-direction == rtl, ltr, rtl) !default;
 $left:        		 	if($global-direction == rtl, left, right);
 $right:       			if($global-direction == rtl, right, left);
 
+
+// Transitions
+// ------------------------------------------------
+$transition:			all 0.2s ease-in-out;
+
