@@ -11,73 +11,241 @@
                 border-bottom: 1px solid #e7e7e7;
             }
 
-            .sample-box {
+            .color-box {
                 width: 15%;
                 height: 60px;
                 display: inline-block;
                 margin: 5px;
                 border-radius: 3px;
             }
+
+            .grid-box {
+                background: #E3F2FD;
+                padding: 15px;
+                text-align: center;
+                border-radius: 3px;
+                margin-bottom: 10px;
+            }
         </style>
     </head>
     <body>
         <section>
+            <h1>Grid</h1>
+            <div class="row">
+                <div class="col-sm-1">
+                    <div class="grid-box">1</div>
+                </div>
+                <div class="col-sm-1">
+                    <div class="grid-box">1</div>
+                </div>
+                <div class="col-sm-1">
+                    <div class="grid-box">1</div>
+                </div>
+                <div class="col-sm-1">
+                    <div class="grid-box">1</div>
+                </div>
+                <div class="col-sm-1">
+                    <div class="grid-box">1</div>
+                </div>
+                <div class="col-sm-1">
+                    <div class="grid-box">1</div>
+                </div>
+                <div class="col-sm-1">
+                    <div class="grid-box">1</div>
+                </div>
+                <div class="col-sm-1">
+                    <div class="grid-box">1</div>
+                </div>
+                <div class="col-sm-1">
+                    <div class="grid-box">1</div>
+                </div>
+                <div class="col-sm-1">
+                    <div class="grid-box">1</div>
+                </div>
+                <div class="col-sm-1">
+                    <div class="grid-box">1</div>
+                </div>
+                <div class="col-sm-1">
+                    <div class="grid-box">1</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="grid-box">2</div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="grid-box">2</div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="grid-box">2</div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="grid-box">2</div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="grid-box">2</div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="grid-box">2</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="grid-box">3</div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="grid-box">3</div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="grid-box">3</div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="grid-box">3</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="grid-box">4</div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="grid-box">4</div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="grid-box">4</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="grid-box">6</div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="grid-box">6</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="grid-box">12</div>
+                </div>
+            </div>
+            <h3>Row spacing</h3>
+            <h4>XS</h4>
+            <div class="row xs">
+                <div class="col-sm-3">
+                    <div class="grid-box">3</div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="grid-box">3</div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="grid-box">3</div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="grid-box">3</div>
+                </div>
+            </div>
+            <h4>SM</h4>
+            <div class="row sm">
+                <div class="col-sm-3">
+                    <div class="grid-box">3</div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="grid-box">3</div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="grid-box">3</div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="grid-box">3</div>
+                </div>
+            </div>
+            <h4>LG</h4>
+            <div class="row lg">
+                <div class="col-sm-3">
+                    <div class="grid-box">3</div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="grid-box">3</div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="grid-box">3</div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="grid-box">3</div>
+                </div>
+            </div>
+            <h4>XLG</h4>
+            <div class="row xlg">
+                <div class="col-sm-3">
+                    <div class="grid-box">3</div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="grid-box">3</div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="grid-box">3</div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="grid-box">3</div>
+                </div>
+            </div>
+        </section>
+        <section>
             <h1>Colors</h1>
-            <div class="sample-box bg-red-lightest"></div>
-            <div class="sample-box bg-red-lighter"></div>
-            <div class="sample-box bg-red-light"></div>
-            <div class="sample-box bg-red"></div>
-            <div class="sample-box bg-red-dark"></div>
-            <div class="sample-box bg-red-darker"></div>
+            <div class="color-box bg-red-lightest"></div>
+            <div class="color-box bg-red-lighter"></div>
+            <div class="color-box bg-red-light"></div>
+            <div class="color-box bg-red"></div>
+            <div class="color-box bg-red-dark"></div>
+            <div class="color-box bg-red-darker"></div>
             <br>
-            <div class="sample-box bg-orange-lightest"></div>
-            <div class="sample-box bg-orange-lighter"></div>
-            <div class="sample-box bg-orange-light"></div>
-            <div class="sample-box bg-orange"></div>
-            <div class="sample-box bg-orange-dark"></div>
-            <div class="sample-box bg-orange-darker"></div>
+            <div class="color-box bg-orange-lightest"></div>
+            <div class="color-box bg-orange-lighter"></div>
+            <div class="color-box bg-orange-light"></div>
+            <div class="color-box bg-orange"></div>
+            <div class="color-box bg-orange-dark"></div>
+            <div class="color-box bg-orange-darker"></div>
             <br>
-            <div class="sample-box bg-yellow-lightest"></div>
-            <div class="sample-box bg-yellow-lighter"></div>
-            <div class="sample-box bg-yellow-light"></div>
-            <div class="sample-box bg-yellow"></div>
-            <div class="sample-box bg-yellow-dark"></div>
-            <div class="sample-box bg-yellow-darker"></div>
+            <div class="color-box bg-yellow-lightest"></div>
+            <div class="color-box bg-yellow-lighter"></div>
+            <div class="color-box bg-yellow-light"></div>
+            <div class="color-box bg-yellow"></div>
+            <div class="color-box bg-yellow-dark"></div>
+            <div class="color-box bg-yellow-darker"></div>
             <br>
-            <div class="sample-box bg-green-lightest"></div>
-            <div class="sample-box bg-green-lighter"></div>
-            <div class="sample-box bg-green-light"></div>
-            <div class="sample-box bg-green"></div>
-            <div class="sample-box bg-green-dark"></div>
-            <div class="sample-box bg-green-darker"></div>
+            <div class="color-box bg-green-lightest"></div>
+            <div class="color-box bg-green-lighter"></div>
+            <div class="color-box bg-green-light"></div>
+            <div class="color-box bg-green"></div>
+            <div class="color-box bg-green-dark"></div>
+            <div class="color-box bg-green-darker"></div>
             <br>
-            <div class="sample-box bg-teal-lightest"></div>
-            <div class="sample-box bg-teal-lighter"></div>
-            <div class="sample-box bg-teal-light"></div>
-            <div class="sample-box bg-teal"></div>
-            <div class="sample-box bg-teal-dark"></div>
-            <div class="sample-box bg-teal-darker"></div>
+            <div class="color-box bg-teal-lightest"></div>
+            <div class="color-box bg-teal-lighter"></div>
+            <div class="color-box bg-teal-light"></div>
+            <div class="color-box bg-teal"></div>
+            <div class="color-box bg-teal-dark"></div>
+            <div class="color-box bg-teal-darker"></div>
             <br>
-            <div class="sample-box bg-blue-lightest"></div>
-            <div class="sample-box bg-blue-lighter"></div>
-            <div class="sample-box bg-blue-light"></div>
-            <div class="sample-box bg-blue"></div>
-            <div class="sample-box bg-blue-dark"></div>
-            <div class="sample-box bg-blue-darker"></div>
+            <div class="color-box bg-blue-lightest"></div>
+            <div class="color-box bg-blue-lighter"></div>
+            <div class="color-box bg-blue-light"></div>
+            <div class="color-box bg-blue"></div>
+            <div class="color-box bg-blue-dark"></div>
+            <div class="color-box bg-blue-darker"></div>
             <br>
-            <div class="sample-box bg-purple-lightest"></div>
-            <div class="sample-box bg-purple-lighter"></div>
-            <div class="sample-box bg-purple-light"></div>
-            <div class="sample-box bg-purple"></div>
-            <div class="sample-box bg-purple-dark"></div>
-            <div class="sample-box bg-purple-darker"></div>
+            <div class="color-box bg-purple-lightest"></div>
+            <div class="color-box bg-purple-lighter"></div>
+            <div class="color-box bg-purple-light"></div>
+            <div class="color-box bg-purple"></div>
+            <div class="color-box bg-purple-dark"></div>
+            <div class="color-box bg-purple-darker"></div>
             <br>
-            <div class="sample-box bg-gray-lightest"></div>
-            <div class="sample-box bg-gray-lighter"></div>
-            <div class="sample-box bg-gray-light"></div>
-            <div class="sample-box bg-gray"></div>
-            <div class="sample-box bg-gray-dark"></div>
-            <div class="sample-box bg-gray-darker"></div>
+            <div class="color-box bg-gray-lightest"></div>
+            <div class="color-box bg-gray-lighter"></div>
+            <div class="color-box bg-gray-light"></div>
+            <div class="color-box bg-gray"></div>
+            <div class="color-box bg-gray-dark"></div>
+            <div class="color-box bg-gray-darker"></div>
             <br> </section>
         <section>
             <h1>Typography</h1>

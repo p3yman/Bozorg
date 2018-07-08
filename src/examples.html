@@ -12,12 +12,19 @@
             padding-bottom: 50px;
             border-bottom: 1px solid #e7e7e7;
         }
-        .sample-box{
+        .color-box{
             width: 15%;
             height: 60px;
             display: inline-block;
             margin: 5px;
             border-radius: 3px;
+        }
+        .grid-box{
+            background: #E3F2FD;
+            padding: 15px;
+            text-align: center;
+            border-radius: 3px;
+            margin-bottom: 10px;
         }
     </style>
 
@@ -25,14 +32,71 @@
 <body>
 
     <section>
+        <h1>Grid</h1>
+        <div class="row">
+            @@for (var i = 0; i < 12; i++) {
+                <div class="col-sm-1"><div class="grid-box">1</div></div>
+            }
+        </div>
+        <div class="row">
+            @@for (var i = 0; i < 6; i++) {
+                <div class="col-sm-2"><div class="grid-box">2</div></div>
+            }
+        </div>
+        <div class="row">
+            @@for (var i = 0; i < 4; i++) {
+            <div class="col-sm-3"><div class="grid-box">3</div></div>
+            }
+        </div>
+        <div class="row">
+            @@for (var i = 0; i < 3; i++) {
+            <div class="col-sm-4"><div class="grid-box">4</div></div>
+            }
+        </div>
+        <div class="row">
+            @@for (var i = 0; i < 2; i++) {
+            <div class="col-sm-6"><div class="grid-box">6</div></div>
+            }
+        </div>
+        <div class="row">
+            <div class="col-sm-12"><div class="grid-box">12</div></div>
+        </div>
+        <h3>Row spacing</h3>
+        <h4>XS</h4>
+        <div class="row xs">
+            @@for (var i = 0; i < 4; i++) {
+            <div class="col-sm-3"><div class="grid-box">3</div></div>
+            }
+        </div>
+        <h4>SM</h4>
+        <div class="row sm">
+            @@for (var i = 0; i < 4; i++) {
+            <div class="col-sm-3"><div class="grid-box">3</div></div>
+            }
+        </div>
+        <h4>LG</h4>
+        <div class="row lg">
+            @@for (var i = 0; i < 4; i++) {
+            <div class="col-sm-3"><div class="grid-box">3</div></div>
+            }
+        </div>
+        <h4>XLG</h4>
+        <div class="row xlg">
+            @@for (var i = 0; i < 4; i++) {
+            <div class="col-sm-3"><div class="grid-box">3</div></div>
+            }
+        </div>
+    </section>
+
+    <section>
         <h1>Colors</h1>
         @@for (var i = 0; i < colors.length; i++) {
-        <div class="sample-box bg-`+colors[i]+`-lightest"></div>
-        <div class="sample-box bg-`+colors[i]+`-lighter"></div>
-        <div class="sample-box bg-`+colors[i]+`-light"></div>
-        <div class="sample-box bg-`+colors[i]+`"></div>
-        <div class="sample-box bg-`+colors[i]+`-dark"></div>
-        <div class="sample-box bg-`+colors[i]+`-darker"></div>
+        <div class="color-box bg-`+colors[i]+`-lightest"></div>
+        <div class="color-box bg-`+colors[i]+`-lighter"></div>
+        <div class="color-box bg-`+colors[i]+`-light"></div>
+        <div class="color-box bg-`+colors[i]+`"></div>
+        <div class="color-box bg-`+colors[i]+`-dark"></div>
+        <div class="color-box bg-`+colors[i]+`-darker"></div>
         <br>
         }
     </section>
