@@ -1,3 +1,56 @@
 //-----------------------------------------------------------------
 // Mixins
 //-----------------------------------------------------------------
+
+// Margin Generator
+//------------------------------------------------
+@mixin margin_generator($value) {
+
+	.m#{$value}{
+		margin: rem($value)!important;
+	}
+
+	.mt#{$value}{
+		margin-top: rem($value)!important;
+	}
+
+	.mr#{$value}{
+		margin-right: rem($value)!important;
+	}
+
+	.mb#{$value}{
+		margin-bottom: rem($value)!important;
+	}
+
+	.ml#{$value}{
+		margin-left: rem($value)!important;
+	}
+
+}
+
+
+// Padding Generator
+//------------------------------------------------
+@mixin padding_generator($value) {
+
+	.p#{$value}{
+		padding: rem($value)!important;
+	}
+
+	.pt#{$value}{
+		padding-top: rem($value)!important;
+	}
+
+	.pr#{$value}{
+		padding-right: rem($value)!important;
+	}
+
+	.pb#{$value}{
+		padding-bottom: rem($value)!important;
+	}
+
+	.pl#{$value}{
+		padding-left: rem($value)!important;
+	}
+
+}
