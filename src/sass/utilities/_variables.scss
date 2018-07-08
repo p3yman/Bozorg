@@ -221,3 +221,20 @@ $code-bg:                   #333 !default;
 $code-color:                #fff !default;
 $code-padding-y:            3px !default;
 $code-padding-x:            5px !default;
+
+
+// Images
+// ------------------------------------------------
+$image-border-radius: 		$border-radius;
+$image-thumb-border-color: 	$border-color;
+$image-thumb-border: 		1px solid $image-thumb-border-color;
+$image-thumb-padding: 		5px;
+$image-thumb-shadow: 		$shadow;
+
+
+// Helpers
+//------------------------------------------------
+$margin-count:				10;
+$margin-steps:				5;
+$padding-count:				10;
+$padding-steps:				5;
