@@ -2,6 +2,84 @@
 // Mixins
 //-----------------------------------------------------------------
 
+// Clearfix
+//------------------------------------------------
+@mixin clearfix {
+	&:after {
+		visibility: hidden;
+		display: block;
+		font-size: 0;
+		content: " ";
+		clear: both;
+		height: 0;
+	}
+}
+
+
+// Media Query
+//------------------------------------------------
+@mixin bp($class: xs) {
+	@if $class == xs {
+		@media (max-width: (map_get($bp-sizes, 'sm')-1) + 'px') { @content; }
+	}
+
+	@else if $class == sm {
+		@media (min-width: map_get($bp-sizes, 'sm') + 'px') { @content; }
+	}
+
+	@else if $class == md {
+		@media (min-width: map_get($bp-sizes, 'md') + 'px') { @content; }
+	}
+
+	@else if $class == lg {
+		@media (min-width: map_get($bp-sizes, 'lg') + 'px') { @content; }
+	}
+
+	@else {
+		@warn "Breakpoint mixin supports: xs, sm, md, lg";
+	}
+}
+
+
+// Grid
+//------------------------------------------------
+@mixin make-grid($size){
+
+	$list: '.col-#{$size}-1';
+
+	@for $i from 2 through $columns {
+		$list: "#{$list}, .col-#{$size}-#{$i}";
+	}
+
+	@if($size == 'xs'){
+		#{$list}{
+			float: $right;
+		}
+
+		@for $i from 1 through 12 {
+			.col-#{$size}-#{$i}{
+				@include grid-width($i);
+			}
+		}
+	} @else {
+		@include bp($size){
+			#{$list}{
+				float: $right;
+			}
+
+			@for $i from 1 through 12 {
+				.col-#{$size}-#{$i}{
+					@include grid-width($i);
+				}
+			}
+		}
+	}
+}
+@mixin grid-width($i){
+	width: percentage(($i / $columns));
+}
+
+
 // Margin Generator
 //------------------------------------------------
 @mixin margin_generator($value) {

@@ -1,0 +1,123 @@
+/*-----------------------------------------------------------------
+- Grid
+-----------------------------------------------------------------*/
+
+// Container
+//------------------------------------------------
+.container{
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: $gutter/2;
+	padding-left: $gutter/2;
+	@include clearfix;
+
+	@each $size, $value in $container-sizes{
+		@include bp($size){
+			width: px($value);
+		}
+	}
+}
+
+// Fluid
+.container-fluid{
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: $gutter/2;
+	padding-left: $gutter/2;
+	@include clearfix;
+}
+
+
+// Row
+//------------------------------------------------
+.row{
+	margin-right: -($gutter/2);
+	margin-left: -($gutter/2);
+	@include clearfix;
+}
+
+
+// Columns
+//------------------------------------------------
+$list: '.col-xs-1,';
+$items: ('xs', 'sm', 'md', 'lg');
+$start: 1;
+
+@each $item in $items{
+
+	@if($item == xs){
+		$start: 2;
+	} @else {
+		$start: 1;
+	}
+
+	@for $i from $start through $columns {
+		$list: "#{$list}, .col-#{$item}-#{$i}";
+	}
+
+}
+#{$list}{
+	position: relative;
+	min-height: 1px;
+	padding-left:  15px;
+	padding-right: 15px;
+}
+
+// XS
+@include make-grid('xs');
+
+// SM
+@include make-grid('sm');
+
+// MD
+@include make-grid('md');
+
+// LG
+@include make-grid('lg');
+
+// Col Center
+.col-center{
+	float: none;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+// Grid space sizes
+.row{
+	&.xs{
+		margin-right: 0;
+		margin-left: 0;
+
+		[class^="col-"]{
+			padding-right: 0;
+			padding-left: 0;
+		}
+	}
+	&.sm{
+		margin-right: -5px;
+		margin-left: -5px;
+
+		[class^="col-"]{
+			padding-right: 5px;
+			padding-left: 5px;
+		}
+	}
+	&.lg{
+		margin-right: -20px;
+		margin-left: -20px;
+
+		[class^="col-"]{
+			padding-right: 20px;
+			padding-left: 20px;
+		}
+	}
+	&.xlg{
+		margin-right: -30px;
+		margin-left: -30px;
+
+		[class^="col-"]{
+			padding-right: 30px;
+			padding-left: 30px;
+		}
+	}
+}
