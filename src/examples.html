@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="css/bozorg.css">
 
     <style>
-        body{
-            padding: 50px;
+        section{
+            margin: 50px;
+            padding-bottom: 50px;
+            border-bottom: 1px solid #e7e7e7;
         }
         .sample-box{
             width: 15%;
@@ -22,8 +24,9 @@
 </head>
 <body>
 
-    <h1>Colors</h1>
-    @@for (var i = 0; i < colors.length; i++) {
+    <section>
+        <h1>Colors</h1>
+        @@for (var i = 0; i < colors.length; i++) {
         <div class="sample-box bg-`+colors[i]+`-lightest"></div>
         <div class="sample-box bg-`+colors[i]+`-lighter"></div>
         <div class="sample-box bg-`+colors[i]+`-light"></div>
@@ -31,32 +34,33 @@
         <div class="sample-box bg-`+colors[i]+`-dark"></div>
         <div class="sample-box bg-`+colors[i]+`-darker"></div>
         <br>
-    }
+        }
+    </section>
 
-    <hr>
+    <section>
+        <h1>Typography</h1>
+        <h1>Heading 1 <small>small heading</small></h1>
+        <h2>Heading 2 <small>small heading</small></h2>
+        <h3>Heading 3 <small>small heading</small></h3>
+        <h4>Heading 4 <small>small heading</small></h4>
+        <h5>Heading 5 <small>small heading</small></h5>
+        <h6>Heading 6 <small>small heading</small></h6>
 
-    <h1>Typography</h1>
-    <h1>Heading 1 <small>small heading</small></h1>
-    <h2>Heading 2 <small>small heading</small></h2>
-    <h3>Heading 3 <small>small heading</small></h3>
-    <h4>Heading 4 <small>small heading</small></h4>
-    <h5>Heading 5 <small>small heading</small></h5>
-    <h6>Heading 6 <small>small heading</small></h6>
+        <p>Lorem ipsum <a href="#">dolor sit amet</a>, consectetur adipisicing elit. Aliquam eaque earum id illo illum magni modi nesciunt, optio placeat quia repellat, sed sint totam? Autem culpa id itaque molestiae quaerat.</p>
 
-    <p>Lorem ipsum <a href="#">dolor sit amet</a>, consectetur adipisicing elit. Aliquam eaque earum id illo illum magni modi nesciunt, optio placeat quia repellat, sed sint totam? Autem culpa id itaque molestiae quaerat.</p>
+        <a href="#">Test link</a>
 
-    <a href="#">Test link</a>
+        <strong>Strong</strong><b>Bold</b><mark>Mark</mark>
 
-    <strong>Strong</strong><b>Bold</b><mark>Mark</mark>
+        <code>Code test</code>
 
-    <code>Code test</code>
-
-    <div class="h1">With h1 class</div>
-    <div class="h2">With h1 class</div>
-    <div class="h3">With h1 class</div>
-    <div class="h4">With h1 class</div>
-    <div class="h5">With h1 class</div>
-    <div class="h6">With h1 class</div>
+        <div class="h1">With h1 class</div>
+        <div class="h2">With h1 class</div>
+        <div class="h3">With h1 class</div>
+        <div class="h4">With h1 class</div>
+        <div class="h5">With h1 class</div>
+        <div class="h6">With h1 class</div>
+    </section>
 
 </body>
 </html>
