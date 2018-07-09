@@ -2065,3 +2065,135 @@ code {
     pointer-events: none;
     -webkit-box-shadow: none;
             box-shadow: none; }
+  .button.red {
+    background: #E74C3C;
+    border-color: #df2e1b;
+    color: #fff; }
+    .button.red:hover {
+      background: #e43725; }
+  .button.orange {
+    background: #FF9800;
+    border-color: #d68000;
+    color: #fff; }
+    .button.orange:hover {
+      background: #e68900; }
+  .button.yellow {
+    background: #FFC107;
+    border-color: #dda600;
+    color: #fff; }
+    .button.yellow:hover {
+      background: #edb100; }
+  .button.green {
+    background: #4caf50;
+    border-color: #409343;
+    color: #fff; }
+    .button.green:hover {
+      background: #449d48; }
+  .button.teal {
+    background: #009688;
+    border-color: #006d63;
+    color: #fff; }
+    .button.teal:hover {
+      background: #007d71; }
+  .button.blue {
+    background: #2196F3;
+    border-color: #0c82df;
+    color: #fff; }
+    .button.blue:hover {
+      background: #0d8aee; }
+  .button.purple {
+    background: #8362D6;
+    border-color: #6942ce;
+    color: #fff; }
+    .button.purple:hover {
+      background: #734ed1; }
+  .button.gray-darker {
+    background: #1d1f26;
+    border-color: #0b0c0f;
+    color: #fff; }
+    .button.gray-darker:hover {
+      background: #121318; }
+  .button.gray-dark {
+    background: #323644;
+    border-color: #21232c;
+    color: #fff; }
+    .button.gray-dark:hover {
+      background: #272a35; }
+  .button.gray {
+    background: #484D61;
+    border-color: #373a4a;
+    color: #fff; }
+    .button.gray:hover {
+      background: #3d4152; }
+  .button.gray-light {
+    background: #5e647e;
+    border-color: #4c5267;
+    color: #fff; }
+    .button.gray-light:hover {
+      background: #535970; }
+  .button.gray-lighter {
+    background: #767d99;
+    border-color: #626984;
+    color: #fff; }
+    .button.gray-lighter:hover {
+      background: #69708d; }
+  .button.facebook {
+    background: #3b5998;
+    border-color: #30487b;
+    color: #ffffff; }
+    .button.facebook:hover {
+      background: #344e86; }
+  .button.google {
+    background: #4285f4;
+    border-color: #1b6cf2;
+    color: #ffffff; }
+    .button.google:hover {
+      background: #2a75f3; }
+  .button.google-plus {
+    background: #dd4b39;
+    border-color: #ca3523;
+    color: #ffffff; }
+    .button.google-plus:hover {
+      background: #d73925; }
+  .button.twitter {
+    background: #00aced;
+    border-color: #008ec4;
+    color: #ffffff; }
+    .button.twitter:hover {
+      background: #0099d4; }
+  .button.instagram {
+    background: #405de6;
+    border-color: #1d3fe0;
+    color: #ffffff; }
+    .button.instagram:hover {
+      background: #294ae3; }
+  .button.linkedin {
+    background: #007bb6;
+    border-color: #005f8d;
+    color: #ffffff; }
+    .button.linkedin:hover {
+      background: #006a9d; }
+  .button.youtube {
+    background: #bb0000;
+    border-color: #920000;
+    color: #ffffff; }
+    .button.youtube:hover {
+      background: #a20000; }
+  .button.telegram {
+    background: #0088cc;
+    border-color: #006da3;
+    color: #ffffff; }
+    .button.telegram:hover {
+      background: #0077b3; }
+  .button.dribbble {
+    background: #ea4c89;
+    border-color: #e62771;
+    color: #ffffff; }
+    .button.dribbble:hover {
+      background: #e7357a; }
+  .button.pinterest {
+    background: #bd081c;
+    border-color: #960616;
+    color: #ffffff; }
+    .button.pinterest:hover {
+      background: #a50718; }

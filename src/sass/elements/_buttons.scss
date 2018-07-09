@@ -52,4 +52,35 @@
 		pointer-events: none;
 		box-shadow: none;
 	}
+
+	// Colors
+	//------------------------------------------------
+	@each $color, $value in $colors{
+		&.#{$color}{
+			background: $value;
+			border-color: darken($value, 8%);
+
+			@if (lightness($value) > 80) {
+				color: $button-color;
+			} @else {
+				color: #fff;
+			}
+
+			&:hover{
+				background: darken($value, 5%);
+			}
+		}
+	}
+	// Socials
+	@each $social, $value in $socials{
+		&.#{$social}{
+			background: $value;
+			border-color: darken($value, 8%);
+			color: #ffffff;
+
+			&:hover{
+				background: darken($value, 5%);
+			}
+		}
+	}
 }
