@@ -153,4 +153,64 @@
 	&.rounded{
 		border-radius: $button-height/2;
 	}
+
+	// Sizes
+	//------------------------------------------------
+	&.xs {
+		height: $button-xs-height;
+		font-weight: $button-xs-font-weight;
+		font-size: $button-xs-font-size;
+		padding: $button-xs-padding-y $button-xs-padding-x;
+
+		&.circular{
+			width: $button-xs-height !important;
+		}
+		&.rounded{
+			border-radius: $button-xs-height/2;
+		}
+		[class^="icon-"], [class*=" icon-"]{
+			font-size: $button-xs-font-size;
+		}
+		&.wide{
+			padding: $button-xs-padding-y $button-wide-xs-padding-x;
+		}
+	}
+	&.sm {
+		height: $button-sm-height;
+		font-size: $button-sm-font-size;
+		line-height: $button-sm-line-height;
+		padding: $button-sm-padding-y $button-sm-padding-x;
+
+		&.circular{
+			width: $button-sm-height !important;
+		}
+		&.rounded{
+			border-radius: $button-sm-height/2;
+		}
+		[class^="icon-"], [class*=" icon-"]{
+			font-size: $button-sm-font-size;
+		}
+		&.wide{
+			padding: $button-sm-padding-y $button-wide-sm-padding-x;
+		}
+	}
+	&.lg {
+		height: $button-lg-height;
+		font-size: $button-lg-font-size;
+		line-height: $button-lg-line-height;
+		padding: $button-lg-padding-y $button-lg-padding-x;
+
+		&.circular{
+			width: $button-lg-height !important;
+		}
+		&.rounded{
+			border-radius: $button-lg-height/2;
+		}
+		[class^="icon-"], [class*=" icon-"]{
+			font-size: $button-lg-font-size;
+		}
+		&.wide{
+			padding: $button-lg-padding-y $button-wide-lg-padding-x;
+		}
+	}
 }
