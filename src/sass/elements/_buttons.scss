@@ -83,4 +83,74 @@
 			}
 		}
 	}
+
+	// Alt
+	//------------------------------------------------
+	&.alt{
+		background: none !important;
+		color: $button-color;
+		box-shadow: none;
+
+		@each $color, $value in $colors{
+			&.#{$color}{
+				border-color: $value;
+				color: $value;
+
+				&:hover{
+					border-color: darken($value, 10%);
+					color: darken($value, 10%);
+				}
+			}
+		}
+	}
+
+	// Inverted
+	//------------------------------------------------
+	&.inverted{
+		background: none;
+		color: $button-color;
+		box-shadow: none;
+
+		&:hover{
+			color: #ffffff;
+			border-color: $button-color;
+			background: $button-color;
+		}
+
+		@each $color, $value in $colors{
+			&.#{$color}{
+				border-color: $value;
+				@if (lightness($value) > 80) {
+					color: darken($value, 30%);
+				} @else {
+					color: $value;
+				}
+
+				&:hover{
+					@if (lightness($value) > 80) {
+						color: darken($value, 30%);
+					} @else {
+						color: #fff;
+					}
+					background: $value;
+				}
+				&:active{
+					background: darken($value, 5%);
+				}
+			}
+		}
+	}
+	
+	// Block
+	//------------------------------------------------
+	&.block{
+		display: block;
+		width: 100%;
+	}
+	
+	// Rounded
+	//------------------------------------------------
+	&.rounded{
+		border-radius: $button-height/2;
+	}
 }
