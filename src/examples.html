@@ -33,10 +33,20 @@
 
     <section>
         <h1>Buttons</h1>
-        <button class="button xs">Test Button</button>
-        <button class="button sm">Test Button</button>
-        <button class="button">Test Button</button>
-        <button class="button lg">Test Button</button>
+        <div class="mb5">
+            <button class="button xs">Test Button</button>
+            <button class="button sm">Test Button</button>
+            <button class="button">Test Button</button>
+            <button class="button lg">Test Button</button>
+        </div>
+        @@for (var i = 0; i < colors.length; i++) {
+        <div class="mb5">
+            <button class="button `+colors[i]+` xs">Test Button</button>
+            <button class="button `+colors[i]+` sm">Test Button</button>
+            <button class="button `+colors[i]+`">Test Button</button>
+            <button class="button `+colors[i]+` lg">Test Button</button>
+        </div>
+        }
     </section>
 
     <section>
